@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/boxOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boxOneTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        style="@style/whitebox" />
+
+
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="@string/boxTwoTxt"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxOne"
+    style="@style/whitebox" />
+
+    <TextView
+        android:id="@+id/box3"
+        style="@style/whitebox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/margin"
+       android:layout_marginEnd="@dimen/margin"
+        android:text="@string/boxThreetxt"
+    app:layout_constraintStart_toEndOf="@id/box2"
+        app:layout_constraintTop_toTopOf="@id/box2"
+        app:layout_constraintEnd_toEndOf="parent" />
+     />
+
+    <TextView
+        android:id="@+id/box4"
+        style="@style/whitebox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/boxFourtxt"
+        app:layout_constraintStart_toEndOf="@id/box2"
+        app:layout_constraintBottom_toTopOf="@id/box5"
+        app:layout_constraintTop_toBottomOf="@id/box3"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/box5"
+        style="@style/whitebox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/boxFivetxt"
+app:layout_constraintBottom_toBottomOf="@id/box2"
+        app:layout_constraintStart_toEndOf="@id/box2"
+        app:layout_constraintTop_toBottomOf="@id/box4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
